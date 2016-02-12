@@ -1,0 +1,122 @@
+*{margin:0px;padding:0px;font-family:宋体;}
+.header{
+	width:99.9%;
+	height:35px;
+	border:1px solid #fdfdfd;
+	background-color:#f4f3f3;
+	background:gradient(top,#fdfdfd,#f4f3f3);
+	background:-webkit-linear-gradient(top,#fdfdfd,#f4f3f3);
+	background:-moz-linear-gradient(top,#fdfdfd,#f4f3f3);
+	background:-o-linear-gradient(top,#fdfdfd,#f4f3f3);
+	font-size:12px;
+}
+.searchbar{
+	width:99.9%;
+	height:95px;
+}
+.logo{
+	width:100px;
+	height:100px;
+	background-image:url("imgs/logo.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	float:left;
+	margin-left:10%;
+}
+.logoname{
+	font-size:22px;
+	font-family:【双初】若樱体,微软雅黑;
+	float:left;
+	padding-top:15px;
+	margin-right:100px;
+}
+.en-logoname{
+	font-size:16px;
+	font-family:【双初】若樱体,微软雅黑;
+}
+.search{
+	width:455px;
+	height:45px;
+	float:left;
+	margin-top:25px;
+	margin-right:20px;
+}
+.search input{
+	width:320px;
+	height:45px;
+	float:left;
+}
+.search-icon{
+	width:45px;
+	height:45px;
+	background-color:#000;
+	background-image:url("imgs/search.png");
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+}
+.buyer{
+	background-color:#484848;
+	color:#ffd045;
+	font-family:微软雅黑;
+	font-size:20px;
+	padding:8px 15px;
+	margin-top:25px;
+}
+.navbar{
+	width:99.9%;
+	height:50px;
+	background-color:#323232;
+	color:#fff;
+}
+.navbar ul{
+	margin:0px auto;
+}
+.navbar ul li{
+	list-style:none;
+	float:left;
+	font-family:微软雅黑;
+	line-height:50px;
+	text-align:center;
+	padding:0px 40px;
+}
+.li-active{
+	background-color:#484848;
+	height:55px;
+	margin-top:-7px;
+}
+.bg-li-active{
+	width:20px;
+	height:20px;
+	float:left;
+	display:block;
+	background-color:#000;
+	margin-top:-3px;
+	margin-left:-10px;
+	margin-right:-10px;
+	transform:rotateZ(45deg);
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	z-index:-1000;
+}
+.carousel{
+	width:99.9%;
+	height:490px;
+}
+.carousel img{
+	width:99.9%;
+	height:490px;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+.main{
+	width:80%;
+	height:330px;
+	margin:15px auto;
+}

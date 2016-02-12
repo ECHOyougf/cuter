@@ -1,0 +1,1 @@
+var oPic=document.getElementById();
