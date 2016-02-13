@@ -1,10 +1,5 @@
 *{margin:0px;padding:0px;font-family:宋体;}
-body{
-	width:99.9%;
-	margin:0px auto;
-}
 .header{
-	width:99.9%;
 	height:35px;
 	border:1px solid #fdfdfd;
 	background-color:#f4f3f3;
@@ -69,7 +64,6 @@ body{
 	margin-left:25px;
 }
 .navbar{
-	width:99.9%;
 	height:50px;
 	background-color:#323232;
 	color:#fff;
@@ -152,7 +146,6 @@ body{
 	margin:0px;
 }
 .carousel{
-	width:99.9%;
 	height:490px;
 	background-color:#ffc;
 }
@@ -173,10 +166,13 @@ body{
 	animation:opacityFade 3s;
 	transition:3s all;
 }
-.main{
-	width:80%;
-	height:330px;
-	margin:15px auto;
+@keyframes opacityFade{
+	0%{
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+	}
 }
 .index-banner{
 	z-index:1000;
@@ -204,11 +200,77 @@ body{
 	margin-left:15px;
 	background-color:#fbe922;
 }
-@keyframes opacityFade{
-	0%{
-		opacity:0.5;
-	}
-	100%{
-		opacity:1;
-	}
+.main{
+	width:1005px;
+	height:330px;
+	margin:10px auto;
+}
+.operate-box{
+	width:1005px;
+	height:332px;
+}
+.operate{
+	width:335px;
+	height:330px;
+	margin-right:10px;
+	background-color:#eeeeee;
+	float:left;
+}
+.activityPic{
+	width:660px;
+	height:330px;
+	background-color:#eeeeee;
+	float:left;
+}
+.privilege-box{
+	width:1005px;
+	height:480px;
+	margin-top:10px;
+}
+.privilege-left{
+	width:335px;
+	height:480px;
+	float:left;
+	background-color:#eeeeee;
+}
+.privilege-right{
+	width:670px;
+	height:480px;
+	float:left;
+	background-color:#eeeeee;
+}
+.coupons-box{
+	width:1005px;
+	height:475px;
+	margin:10px auto;
+	background-color:#000;
+}
+.thumbnail{
+	width:100px;
+	height:330px;
+}
+.thumbnail img{
+	width:100px;
+	height:100px;
+	margin:5px 20px;
+}
+.today{
+	width:100px;
+	font-family:微软雅黑;
+	padding-bottom:15px;
+	border-bottom:1px solid #ffc119;
+	margin:20px 10px 10px 20px;
+}
+.date{
+	font-size:24px;
+}
+.day{
+	font-size:14px;
+}
+.activepic{
+	width:525px;
+	height:330px;
+}
+.footer{
+	width:99.9%;
 }
