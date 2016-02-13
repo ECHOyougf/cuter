@@ -1,3 +1,4 @@
+//轮播图
 var oPic=document.getElementById("carousel").children;
 var oIndex=document.getElementById("indexs").children;
 var timer=null;
@@ -19,4 +20,14 @@ function autoChangeBanner(){
 	setTimeout("changeBanner(1)","3000");
 	setTimeout("changeBanner(2)","6000");
 	setTimeout("changeBanner(3)","9000");
+}
+
+//会员中心下拉菜单
+var select=document.getElementById("select");
+select.onclick=function(){
+	var option=document.getElementById("option").className;
+	if(option=="optionshow")
+		document.getElementById("option").className="optionhide";
+	else document.getElementById("option").className="optionshow";
+
 }
