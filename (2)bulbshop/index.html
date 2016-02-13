@@ -17,27 +17,37 @@
 
 		<!--搜索栏-->
 		<div class="searchbar">
-			<div class="logo"><!--公司logo-->
-			</div>
+				<div class="logo"><!--公司logo-->
+				</div>
 
-			<div class="logoname">
-				阳阳照明</br>
-				<e class="en-logoname">YYanglamp</e>
-			</div>
+				<div class="logoname">
+					阳阳照明</br>
+					<e class="en-logoname">YYanglamp</e>
+				</div>
 
-			<div class="search"><!--search-->
-				<input type="text" placehoder="请输入文字" />
-				<e class="search-icon"></e>
-			</div>
-			<div><!--购物车-->
-				<button class="buyer">购物车（0）</button>
-			</div>
+				<div class="search"><!--search-->
+					<input type="text" placehoder="请输入文字" />
+					<e class="search-icon"></e>
+				</div>
+				<div><!--购物车-->
+					<button class="buyer">购物车（0）</button>
+				</div>
 		</div>
 
 		<!--导航栏-->
 		<div class="navbar">
 			<ul>
-				<i class="bg-li-active"></i><li class="li-active">会员中心</li><i class="bg-li-active"></i>
+				<i class="bg-li-active"></i>
+					<li class="li-active">
+						会员中心
+						<label class="select">></label>
+					</li>
+					<div class="option">
+						<div class="userphoto">
+							<img src="imgs/userphoto.jpg"></img>
+						</div>
+					</div>
+				<i class="bg-li-active"></i>
 				<li>首页</li>
 				<li>会员权益</li>
 				<li>会员积分</li>
@@ -49,6 +59,14 @@
 		<div class="carousel" id="carousel">
 			<img src="imgs/banner1.jpg" class="show"></img>
 			<img src="imgs/banner2.jpg" class="hide"></img>
+			<img src="imgs/banner3.jpg" class="hide"></img>
+			<img src="imgs/banner4.jpg" class="hide"></img>
+			<div class="index-banner" id="indexs">
+				<div class="change-indexColor" onclick="changeBanner(0)"></div>
+				<div class="index" onclick="changeBanner(1)"></div>
+				<div class="index" onclick="changeBanner(2)"></div>
+				<div class="index" onclick="changeBanner(3)"></div>
+			</div>
 		</div>
 
 
@@ -59,6 +77,6 @@
 		<!--页脚-->
 		<div class="footer">
 		</div>
-		<script src="myja.js"></script>
+		<script src="myjs.js"></script>
 	</body>
 </html>

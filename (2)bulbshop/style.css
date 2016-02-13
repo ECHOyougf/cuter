@@ -1,4 +1,8 @@
 *{margin:0px;padding:0px;font-family:宋体;}
+body{
+	width:99.9%;
+	margin:0px auto;
+}
 .header{
 	width:99.9%;
 	height:35px;
@@ -11,7 +15,7 @@
 	font-size:12px;
 }
 .searchbar{
-	width:99.9%;
+	width:1200px;
 	height:95px;
 }
 .logo{
@@ -21,7 +25,7 @@
 	background-repeat:no-repeat;
 	background-position:center;
 	float:left;
-	margin-left:10%;
+	margin-left:100px;
 }
 .logoname{
 	font-size:22px;
@@ -39,7 +43,7 @@
 	height:45px;
 	float:left;
 	margin-top:25px;
-	margin-right:20px;
+	margin-left:20px;
 }
 .search input{
 	width:320px;
@@ -62,6 +66,7 @@
 	font-size:20px;
 	padding:8px 15px;
 	margin-top:25px;
+	margin-left:25px;
 }
 .navbar{
 	width:99.9%;
@@ -70,6 +75,7 @@
 	color:#fff;
 }
 .navbar ul{
+	width:1200px;
 	margin:0px auto;
 }
 .navbar ul li{
@@ -78,7 +84,7 @@
 	font-family:微软雅黑;
 	line-height:50px;
 	text-align:center;
-	padding:0px 40px;
+	padding:0px 60px;
 }
 .li-active{
 	background-color:#484848;
@@ -101,22 +107,98 @@
 	-ms-transform:rotateZ(45deg);
 	z-index:-1000;
 }
+.select{
+	width:50px;
+	height:40px;
+	border:0px;
+	display:block;
+	z-index:1000;
+	margin-top:-40px;
+	margin-left:40px;
+	transform:translateX(40px) rotateZ(90deg);
+	cursor:pointer;
+}
+.option{
+	width:300px;
+	height:400px;
+	position:absolute;
+	margin-top:50px;
+	margin-left:130px;
+	background-color:#fff;
+	z-index:1000;
+}
+.userphoto{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:20px auto;
+	border:2px solid #ffc119;
+	padding:0px;
+}
+.userphoto img{
+	width:100px;
+	height:100px;
+	margin:0px;
+}
 .carousel{
 	width:99.9%;
 	height:490px;
+	background-color:#ffc;
 }
 .carousel img{
-	width:99.9%;
+	margin:0px auto;
+	width:auto;
 	height:490px;
 }
 .hide{
 	display:none;
 }
 .show{
+	margin:0px auto;
+	width:auto;
+	height:490px;
+	position:relative;
 	display:block;
+	animation:opacityFade 3s;
+	transition:3s all;
 }
 .main{
 	width:80%;
 	height:330px;
 	margin:15px auto;
+}
+.index-banner{
+	z-index:1000;
+	width:100px;
+	height:10px;
+	float:left;
+	position:absolute;
+	margin-top:-25px;
+	margin-left:50%;
+}
+.index{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background-color:#fff;
+	float:left;
+	margin-left:15px;
+}
+.change-indexColor{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background-color:#fff;
+	float:left;
+	margin-left:15px;
+	background-color:#fbe922;
+}
+@keyframes opacityFade{
+	0%{
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+	}
 }
