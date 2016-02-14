@@ -1,4 +1,4 @@
-*{margin:0px;padding:0px;font-family:宋体;}
+*{margin:0px;padding:0px;font-family:微软雅黑;}
 .header{
 	height:35px;
 	border:1px solid #fdfdfd;
@@ -203,7 +203,7 @@
 }
 .main{
 	width:1005px;
-	height:330px;
+	height:auto;
 	margin:10px auto;
 }
 .operate-box{
@@ -299,26 +299,220 @@
 .privilege-box{
 	width:1005px;
 	height:480px;
-	margin-top:10px;
+	margin-top:30px;
 }
 .privilege-left{
 	width:335px;
 	height:480px;
 	float:left;
-	background-color:#eeeeee;
+	z-index:1000;
 }
 .privilege-right{
-	width:670px;
+	position:absolute;
+	width:1005px;
 	height:480px;
-	float:left;
+	z-index:-1000;
+	overflow:hidden;
+}
+.privilege-right img{
+	height:470px;
+}
+.up{
+	width:330px;
+	height:23px;
 	background-color:#eeeeee;
+	margin-bottom:10px;
+	padding:5px;
+}
+.down{
+	width:330px;
+	height:23px;
+	background-color:#eeeeee;
+	padding:5px;
+}
+.top-triangal{
+	width:0px;
+	height:0px;
+	border-left:17px solid transparent;
+	border-right:17px solid transparent;
+	border-bottom:20px solid #ffc119;
+	margin:0px auto;
+}
+.bottom-triangal{
+	width:0px;
+	height:0px;
+	border-left:17px solid transparent;
+	border-right:17px solid transparent;
+	border-top:20px solid #ffc119;
+	margin:3px auto;
+}
+.privilege-thumbnail{
+	width:335px;
+	height:395px;
+}
+.privilege-thumbnail-img{
+	width:335px;
+	height:120px;
+	margin:10px auto;
+	background-color:#ffc119;
+	padding:1px;
+}
+.privilege-thumbnail-img img{
+	width:335px;
+	height:120px;	
+}
+.active-privilege{
+	width:25px;
+	height:25px;
+	background-color:transparent;
+	border-top:1px solid #ffc119;
+	border-right:1px solid #ffc119;
+	position:absolute;
+	margin-left:324px;
+	margin-top:-80px;
+	-webkit-transform:rotateZ(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotateZ(45deg);
+	-o-transform:rotateZ(45deg);
+	transform:rotateZ(45deg);
 }
 .coupons-box{
 	width:1005px;
 	height:475px;
-	margin:10px auto;
-	background-color:#000;
+	margin:40px auto;
+}
+.coupon-pic-box{
+	width:280px;
+	height:430px;
+	border:1px solid #ffc119;
+	float:left;
+	margin:0px 20px;
+}
+.coupon-pic-box img{
+	height:200px;
+	width:280px;
+	margin:0px auto;
+}
+.shopName{
+	font-family:微软雅黑;
+	font-size:14px;
+	text-align:center;
+	display:block;
+}
+.price{
+	color:#ad3534;
+	font-size:24px;
+	float:right;
+	margin-top:25px;
+	margin-right:25px;
+}
+.cuter{
+	width:280px;
+	height:16px;
+	float:right;
+	background-image:url("imgs/cut.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top:10px;
+}
+.vipPrice{
+	width:280px;
+	height:30px;
+	font-size:16px;
+	text-align:center;
+	color:#ad3534;
+	display:block;
+	float:right;
+	margin-top:10px;
+}
+.deadline{
+	font-family:宋体;
+	font-size:12px;
+	float:right;
+	width:280px;
+	text-align:center;
+	color:#7a7a7a;
+	margin-bottom:10px;
+}
+.btn-change{
+	width:240px;
+	height:40px;
+	color:#fff;
+	border:0px;
+	margin-right:20px;
+	display:block;
+	background-color:#323232;
+	float:right;
+	text-align:center;
+	line-height:40px;
+}
+.title{
+	width:1005px;
+	height:35px;
+	line-height:35px;
+	text-align:left;
+}
+.bottom{
+	width:99.9%;
+	height:227px;
+	background-color:#323232;
+	margin:0px auto;
+	padding-top:30px;
+}
+.bottom-content{
+	width:850px;
+	margin:0px auto;
+}
+.guide-box{
+	width:135px;
+	height:200px;
+	float:left;
+	margin-right:70px;
+}
+.icon{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.guideicon{
+	background-image:url("imgs/guide.png");
+}
+.trunkicon{
+	background-image:url("imgs/trunk.png");
+}
+.crediticon{
+	background-image:url("imgs/credit.png");
+}
+.serveicon{
+	background-image:url("imgs/serve.png");
+}
+.bottom a{
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	font-family:宋体;
+	font-size:14px;
+	line-height:25px;
+	width:100px;
+	margin-left:45px;
+}
+.bottom-box-name{
+	color:#fff;
+	font-size:18px;
+	float:left;
+	width:95px;
+	line-height:30px;
+	height:40px;
 }
 .footer{
 	width:99.9%;
+	height:75px;
+	background-color:#181818;
+	color:#fff;
+	font-size:12px;
+	font-family:宋体;
+	text-align:center;
+	padding-top:20px;
 }
