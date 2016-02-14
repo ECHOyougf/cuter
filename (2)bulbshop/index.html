@@ -8,11 +8,15 @@
 	<body>
 		<!--顶部信息栏-->
 		<div class="header">
-			<a>欢迎到阳阳照明官网！</a>
-			<a>[登录]</a>
-			<a>[注册]</a>
-			<a>个人中心</a>
-			<a>我的订单</a>
+			<div class="header-left">
+				<a href="#">欢迎到阳阳照明官网！</a>
+				<a href="#">[登录]</a>
+				<a href="#">[注册]</a>
+			</div>
+			<div class="header-right">
+				<a href="#">个人中心</a>
+				<a href="#">我的订单</a>
+			</div>
 		</div>
 
 		<!--搜索栏-->
@@ -37,17 +41,63 @@
 		<!--导航栏-->
 		<div class="navbar">
 			<ul>
-				<i class="bg-li-active"></i>
 					<li class="li-active">
+						<i class="bg-li-active-left"></i>
 						会员中心
-						<label class="select" id="select">></label>
+						<label class="select" id="select"></label>
+						<i class="bg-li-active-right"></i>
 					</li>
 					<div class="optionhide" id="option">
+						<label>吸顶灯</label>
+						<a href="#">水晶灯</a>
+						<a href="#">现代简约</a>
+						<a href="#">欧式经典</a>
+						<a href="#">浪漫田园</a>
+						<a href="#">卡通儿童</a>
+						<a href="#">其他风格</a>
+						<label>吊灯</label>
+						<a href="#">水晶灯</a>
+						<a href="#">现代简约</a>
+						<a href="#">欧式经典</a>
+						<a href="#">浪漫田园</a>
+						<a href="#">卡通儿童</a>
+						<a href="#">其他风格</a>
+						<label>客厅灯</label>
+						<a href="#">水晶灯</a>
+						<a href="#">现代简约</a>
+						<a href="#">欧式经典</a>
+						<a href="#">浪漫田园</a>
+						<a href="#">卡通儿童</a>
+						<a href="#">其他风格</a>
+						<label>卧室灯</label>
+						<a href="#">水晶灯</a>
+						<a href="#">现代简约</a>
+						<a href="#">欧式经典</a>
+						<a href="#">浪漫田园</a>
+						<a href="#">卡通儿童</a>
+						<a href="#">其他风格</a>
+						<label>餐厅灯</label>
+						<a href="#">水晶灯</a>
+						<a href="#">现代简约</a>
+						<a href="#">欧式经典</a>
+						<a href="#">浪漫田园</a>
+						<a href="#">卡通儿童</a>
+						<a href="#">其他风格</a>
+						<label>厨卫灯</label>
+						<a href="#">水晶灯</a>
+						<a href="#">现代简约</a>
+						<a href="#">欧式经典</a>
+						<a href="#">浪漫田园</a>
+						<a href="#">卡通儿童</a>
+						<a href="#">其他风格</a>
+					</div>
+					<!--会员资料-->
+					<!-- 
 						<div class="userphoto">
 							<img src="imgs/userphoto.jpg"></img>
 						</div>
-					</div>
-				<i class="bg-li-active"></i>
+						亲爱的XXX，欢迎回来
+					 -->
 				<li>首页</li>
 				<li>会员权益</li>
 				<li>会员积分</li>
@@ -93,33 +143,33 @@
 							<img src="imgs/activepic2.jpg"></img>
 						</div>
 					</div>
-					<div class="activity-left-right"></div>
+					<div class="activity-left-right" id="activeIcon"></div>
 					<div class="activity-right"><!--右边大图-->
-						<img src="imgs/activepic1.jpg" class="active"></img>
-						<img src="imgs/activepic2.jpg" class="hide"></img>
+						<img src="imgs/activepic1.jpg"  id="active"></img>
 					</div>
 				</div>
 			</div>
 			
 			<!--我的生活特权-->
 			<div class="privilege-box">
-				<div class="title"><label>我的生活特权</label><label>My life privilege</label></div>
+				<div class="title"><label class="ch-title">我的生活特权</label><label class="en-title">My life privilege</label></div>
 				<div class="privilege-left">
-					<div class="up"><div class="top-triangal"></div></div><!--上三角形-->
-					<div class="privilege-thumbnail"><!--左侧三张图-->
-						<div class="privilege-thumbnail-img"><img src="imgs/privilegepic1.jpg"></img></div>
-						<div class="privilege-thumbnail-img"><img src="imgs/privilegepic2.jpg"></img></div>
-						<div class="privilege-thumbnail-img"><img src="imgs/privilegepic3.jpg"></img><div class="active-privilege"></div></div>
+					<div class="up" id="up"><div class="top-triangal"></div></div><!--上三角形-->
+					<div class="privilege-thumbnail" id="privilege"><!--左侧三张图-->
+						<img src="imgs/privilegepic1.jpg"></img>
+						<img src="imgs/privilegepic2.jpg"></img>
+						<img src="imgs/privilegepic3.jpg"></img>
 					</div>
-					<div class="down"><div class="bottom-triangal"></div></div><!--下三角形-->
+					<div class="active-privilege" id="icon-active-privilege"></div>
+					<div class="down" id="down"><div class="bottom-triangal"></div></div><!--下三角形-->
 				</div>
 				<div class="privilege-right">
-					<img src="imgs/privilegepic3.jpg"></img>
+					<img src="imgs/privilegepic3.jpg" id="privilegepic"></img>
 				</div>
 			</div>
 			<!--我的专属优惠券-->
 			<div class="coupons-box">
-				<div class="title"><label>我的专属优惠券</label><label>My exclusive coupons</label></div>
+				<div class="title"><label class="ch-title">我的专属优惠券</label><label class="en-title">My exclusive coupons</label></div>
 				<div class="coupon-pic-box"><!--下端的张图-->
 					<img src="imgs/coupon1.jpg"></img>
 					<label class="shopName">欧简风情 手工工艺吊灯</label>

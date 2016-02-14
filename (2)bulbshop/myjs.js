@@ -32,10 +32,73 @@ select.onclick=function(){
 
 }
 
-//点击左侧缩略图右侧对应出现大图
+var reg=/[^//]\w{0,100}.jpg$/;
+//活动区点击左侧缩略图右侧对应出现大图
 var thumb=document.getElementById("thumbnail").children;
-for(var i=0;i<thumb.length;i++){
-	thumb[i].onclick=function(){
+var actSrc=document.getElementById("active").src;
+var actIcon=document.getElementById("activeIcon");
+thumb[0].onclick=function(){
+		actSrc="imgs/"+thumb[0].src.match(reg);
+		actIcon.style.cssText="margin-top:120px";
+	}
+thumb[1].onclick=function(){
+		actSrc="imgs/"+thumb[1].src.match(reg);
+		actIcon.style.cssText="margin-top:230px";
+	}
+
+//生活特权点击上下切换图片
+var privilege=document.getElementById("privilege").children;
+var priIcon=document.getElementById("icon-active-privilege");
+//for(var i=0;i<privilege.length;i++){
+	privilege[0].onclick=function(){
+		document.getElementById("privilegepic").src="imgs/"+privilege[0].src.match(reg);
+		priIcon.style.cssText="margin-top:-350px";
+		}
+	privilege[1].onclick=function(){
+		document.getElementById("privilegepic").src="imgs/"+privilege[1].src.match(reg);
+		priIcon.style.cssText="margin-top:-210px";
+		}
+	privilege[2].onclick=function(){
+		document.getElementById("privilegepic").src="imgs/"+privilege[2].src.match(reg);
+		priIcon.style.cssText="margin-top:-80px";
+		}
+//	}
+var btnUp=document.getElementById("up");
+var btnDown=document.getElementById("down");
+btnUp.onclick=function(){
+	var flag=0;
+	for(var i=0;i<privilege.length;i++){
+		if(document.getElementById("privilegepic").src==privilege[i].src){
+			flag=i;
+		}
+	}
+	if(flag==0){
+		document.getElementById("privilegepic").src="imgs/"+privilege[2].src.match(reg);
+		priIcon.style.cssText="margin-top:-80px";
+	}else if(flag==1){
+		document.getElementById("privilegepic").src="imgs/"+privilege[0].src.match(reg);
+		priIcon.style.cssText="margin-top:-350px";
+	}else if(flag==2){
+		document.getElementById("privilegepic").src="imgs/"+privilege[1].src.match(reg);
+		priIcon.style.cssText="margin-top:-210px";
+	}
+}
+btnDown.onclick=function(){
+	var flag=0;
+	for(var i=0;i<privilege.length;i++){
+		if(document.getElementById("privilegepic").src==privilege[i].src){
+			flag=i;
+		}
+	}
+	if(flag==0){
+		document.getElementById("privilegepic").src="imgs/"+privilege[1].src.match(reg);
+		priIcon.style.cssText="margin-top:-210px";
+	}else if(flag==1){
+		document.getElementById("privilegepic").src="imgs/"+privilege[2].src.match(reg);
+		priIcon.style.cssText="margin-top:-80px";
 		
+	}else if(flag==2){
+		document.getElementById("privilegepic").src="imgs/"+privilege[0].src.match(reg);
+		priIcon.style.cssText="margin-top:-350px";
 	}
 }
