@@ -12,6 +12,7 @@
 .searchbar{
 	width:1200px;
 	height:95px;
+	margin:0px auto;
 }
 .logo{
 	width:100px;
@@ -147,7 +148,7 @@
 }
 .carousel{
 	height:490px;
-	background-color:#ffc;
+	background-color:#fff;
 }
 .carousel img{
 	margin:0px auto;
@@ -216,11 +217,84 @@
 	background-color:#eeeeee;
 	float:left;
 }
+.operate label{
+	font-family:微软雅黑;
+	font-size:18px;
+	width:280px;
+	height:58px;
+	display:block;
+	line-height:58px;
+	margin:5px auto;
+}
+.operate-br{
+	border-bottom:1px solid #ffc119;
+}
+.count-msg{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#ffc119;
+	display:inline-block;
+	line-height:20px;
+	text-align:center;
+	margin-left:10px;
+	color:#fff;
+}
 .activityPic{
 	width:660px;
 	height:330px;
 	background-color:#eeeeee;
 	float:left;
+}
+.activity-left{
+	width:140px;
+	float:left;
+}
+.activity-right{
+	width:520px;
+	height:330px;
+	float:left;
+}
+.activity-right img{
+	width:520px;
+	height:330px;
+}
+.activity-left-right{
+	width:25px;
+	height:25px;
+	transform:rotateZ(45deg);
+	position:absolute;
+	background-color:#eeeeee;
+	margin-top:120px;
+	margin-left:125px;
+	z-index:2;
+}
+.thumbnail{
+	width:100px;
+	height:330px;
+	float:left;
+}
+.thumbnail img{
+	width:100px;
+	height:100px;
+	margin:5px 20px;
+}
+.bigpic{
+	float:left;
+}
+.today{
+	width:100px;
+	font-family:微软雅黑;
+	padding-bottom:15px;
+	border-bottom:1px solid #ffc119;
+	margin:20px 0px 10px 20px;
+	float:left;
+}
+.date{
+	font-size:24px;
+}
+.day{
+	font-size:14px;
 }
 .privilege-box{
 	width:1005px;
@@ -244,32 +318,6 @@
 	height:475px;
 	margin:10px auto;
 	background-color:#000;
-}
-.thumbnail{
-	width:100px;
-	height:330px;
-}
-.thumbnail img{
-	width:100px;
-	height:100px;
-	margin:5px 20px;
-}
-.today{
-	width:100px;
-	font-family:微软雅黑;
-	padding-bottom:15px;
-	border-bottom:1px solid #ffc119;
-	margin:20px 10px 10px 20px;
-}
-.date{
-	font-size:24px;
-}
-.day{
-	font-size:14px;
-}
-.activepic{
-	width:525px;
-	height:330px;
 }
 .footer{
 	width:99.9%;

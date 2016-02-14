@@ -31,3 +31,11 @@ select.onclick=function(){
 	else document.getElementById("option").className="optionshow";
 
 }
+
+//点击左侧缩略图右侧对应出现大图
+var thumb=document.getElementById("thumbnail").children;
+for(var i=0;i<thumb.length;i++){
+	thumb[i].onclick=function(){
+		
+	}
+}
